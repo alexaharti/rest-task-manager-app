@@ -13,11 +13,12 @@ public class StoreTasks {
 
     public StoreTasks() {
 
-        theTasks.add(new Task(1, "Write an essay", true));
-        theTasks.add(new Task(2, "Solve a LeetCode", false));
-        theTasks.add(new Task(3, "Learn italian", false));
-        theTasks.add(new Task(4, "Read a book", true));
-        theTasks.add(new Task(5, "Feed the cat", true));
+        theTasks.add(new Task(0, "Write an essay", true));
+        theTasks.add(new Task(1, "Solve a LeetCode", false));
+        theTasks.add(new Task(2, "Learn italian", false));
+        theTasks.add(new Task(3, "Read a book", true));
+        theTasks.add(new Task(4, "Feed the cat", true));
+        theTasks.add(new Task(5, "Go to the GYM", false));
     }
 
     public List<Task> getTasks() {
