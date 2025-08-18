@@ -1,8 +1,12 @@
 package pixel.academy.rest_task_manager_app.entity;
 
+import org.springframework.stereotype.Component;
+import pixel.academy.rest_task_manager_app.exception.ResourceNotFoundException;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class StoreTasks {
 
     private List<Task> theTasks = new ArrayList<>();
