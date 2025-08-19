@@ -29,7 +29,7 @@ public class TaskRestController {
     @GetMapping("/tasks/{taskId}")
     public Task getTaskById(@PathVariable int taskId) {
 
-        if ((taskId >= tasks.getTasks().size()) || (taskId <= 0)) {
+        if ((taskId >= tasks.getTasks().size()) || (taskId < 0)) {
             throw new ResourceNotFoundException("Task id not found - " + taskId);
         }
 
